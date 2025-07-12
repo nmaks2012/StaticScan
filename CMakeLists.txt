@@ -14,3 +14,6 @@ set(test_target scan_tests)
 
 add_executable(${test_target} tests/main.cpp)
 target_link_libraries(${test_target} PRIVATE ${target})
+
+add_executable(scan_app main.cpp)
+target_link_libraries(scan_app scan)

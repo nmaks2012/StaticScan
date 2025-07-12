@@ -7,13 +7,18 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Launch StaticScan",
-            "program": "${workspaceFolder}/build/StaticScan",
+            "name": "Launch scan_tests",
+            "program": "${workspaceFolder}/build/scan_tests",
             "args": [
-                "-i",
-                "input.txt",
-                "--command",
-                "checksum"
+            ],
+            "cwd": "${workspaceFolder}/build"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Launch scan_app",
+            "program": "${workspaceFolder}/build/scan_app",
+            "args": [
             ],
             "cwd": "${workspaceFolder}/build"
         }
