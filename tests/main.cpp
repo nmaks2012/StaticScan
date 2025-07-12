@@ -5,6 +5,7 @@
 #include <array>
 #include <bits/ranges_algo.h>
 #include <cstddef>
+#include <print>
 #include <string_view>
 #include <sys/types.h>
 #include <utility>
@@ -198,4 +199,7 @@ int main() {
     // }
 
   // ################ scan #################################
+
+  std::println("Все тесты успешно выполнены");
+
 }
